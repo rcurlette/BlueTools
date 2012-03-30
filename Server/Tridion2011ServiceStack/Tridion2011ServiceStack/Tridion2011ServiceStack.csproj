@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{633972CE-4D34-4032-8A9F-182102E450AB}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tridion2011ServiceStack</RootNamespace>
+    <AssemblyName>Tridion2011ServiceStack</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack, Version=3.5.5.7528, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.5.7\lib\net35\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.5.5.30076, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.5.5\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.FluentValidation.Mvc3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Mvc.3.5.5\lib\net4\ServiceStack.FluentValidation.Mvc3.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=3.5.5.30073, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.5.5\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Logging.Log4Net">
+      <HintPath>..\packages\ServiceStack.Logging.Log4Net.1.0.2.0\lib\net35\ServiceStack.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=3.5.5.29931, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.5.5\lib\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.5.5\lib\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.RazorEngine, Version=2.1.4440.7535, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.5.7\lib\net35\ServiceStack.RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=3.5.2.5612, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Redis.3.5.5\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface, Version=1.0.4440.7532, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.5.7\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.5.7.9337, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.3.5.7\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Tridion.ContentManager.CoreService.Client, Version=6.1.0.996, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Tridion\Tridion2011\client\Tridion.ContentManager.CoreService.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AppHost.cs" />
+    <Compile Include="App_Start\WebServiceExamples.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BlueCopyItem.cs" />
+    <Compile Include="Models\TridionItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BlueCopyRepository.cs" />
+    <Compile Include="Repositories\TridionItemRepository.cs" />
+    <Compile Include="Service References\TridionCoreService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\TridionBlueCopyService.cs" />
+    <Compile Include="Services\TridionItemService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestPages\BlueCopy\BlueCopyTest.htm" />
+    <Content Include="TestPages\BlueCopy\js\popup.js" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\css\bootstrap.css" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\css\bootstrap.min.css" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\js\bootstrap.js" />
+    <Content Include="TestPages\BlueCopy\third-party\bootstrap\js\bootstrap.min.js" />
+    <Content Include="TestPages\ToDos.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="TestPages\GetTridionItem.htm" />
+    <Content Include="README.txt" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="W:\Program Files %28x86%29\Tridion\web\WebUI\Editors\WhoDidIt\client\html\js\third-party\jquery-1.5.1.js">
+      <Link>Scripts\jquery-1.5.1.js</Link>
+    </Content>
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ActivityInstanceData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ApplicationData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ClassificationInfoData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.DirectoryServiceUser.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.IdentifiableObjectData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.InstanceData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ProcessHistoryData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublicationType.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublishContextData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublishInfoData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublishTransactionData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.QueueData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.QueueMessageData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.RenderedItemData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.RepositoryLocalObjectData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.SchemaFieldsData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.TemplateType.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.UserData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.VersionedItemData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.WindowsUser.datasource" />
+    <None Include="Service References\TridionCoreService\CoreService.disco" />
+    <None Include="Service References\TridionCoreService\configuration91.svcinfo" />
+    <None Include="Service References\TridionCoreService\configuration.svcinfo" />
+    <None Include="Service References\TridionCoreService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Service References\TridionCoreService\CoreService.wsdl" />
+    <None Include="Service References\TridionCoreService\CoreService2010.wsdl" />
+    <None Include="Service References\TridionCoreService\CoreService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.ActionFlags.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.ActivityInstanceData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.ApplicationData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.ClassificationInfoData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.DirectoryServiceUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.IdentifiableObjectData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.InstanceData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.ProcessHistoryData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.PublicationType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.PublishContextData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.PublishInfoData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.PublishTransactionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.QueueData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.QueueMessageData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.RenderedItemData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.RepositoryLocalObjectData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.SchemaFieldsData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.TemplateType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.UserData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.VersionedItemData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TridionCoreService\Tridion2011ServiceStack.TridionCoreService.WindowsUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="TestPages\BlueCopy\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TridionCoreService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TridionCoreService\CoreService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TridionCoreService\CoreService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TridionCoreService\CoreService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TridionCoreService\CoreService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TridionCoreService\CoreService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61860</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

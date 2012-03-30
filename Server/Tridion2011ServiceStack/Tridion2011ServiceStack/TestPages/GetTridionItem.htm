@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+    <script src="Scripts/jquery-1.5.1.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        $(function () {
+            $("#form").submit(function (e) {
+                e.preventDefault();
+//                url: "http://nl-bas-06:8001/Tridion2011ServiceStack/api/tridionItem",
+                dataString = $("#form").serialize();
+                url: "http://localhost:61860/api/tridionItem",
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:61860/api/tridionItem",
+                    data: dataString,
+                    dataType: "jsonp",
+                    success: function (data) {
+                        $("#feedback").html("<div class='successMessage'>Title " + data.title + " and URI:" + data.uri + ". Modified by:" + data.lastModifiedBy + ".</div>");
+                    },
+                    error: function (request, status, error) {
+                        alert(request.responseText);
+                    }
+                });
+            });
+        });
+
+	</script>
+</head>
+<body>
+    <form id="form">
+        <label>URI:</label><input type="text" name="Uri" id="Uri" value="tcm:6-3875"/><br />
+        <input type="submit" value="Go" />
+    </form>
+    <div id="feedback"></div>
+</body>
+</html>

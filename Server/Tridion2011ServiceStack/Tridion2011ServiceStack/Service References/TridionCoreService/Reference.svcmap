@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9356d43b-9d4f-4960-bdc1-edb749f8e7fc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://nl-bas-06/webservices/CoreService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CoreService.xsd" MetadataType="Schema" ID="d064081e-b8f6-4982-a3af-fb43c261a13e" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CoreService1.xsd" MetadataType="Schema" ID="e98d575a-57c0-431a-a19c-a16c3dd8e2a1" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CoreService2.xsd" MetadataType="Schema" ID="d7aaefdc-af52-4369-8594-03c4e07c5a9d" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CoreService3.xsd" MetadataType="Schema" ID="e0e0dbb4-c838-4f55-819b-275f429d8a49" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CoreService4.xsd" MetadataType="Schema" ID="0c7ba226-a53f-4eda-ab31-defc5805b4ff" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CoreService.disco" MetadataType="Disco" ID="d9e54351-567e-46d3-b166-f7c5edf5bc77" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?disco" />
+    <MetadataFile FileName="CoreService5.xsd" MetadataType="Schema" ID="9df416db-bfa6-4a43-93f7-f374a9170ee0" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CoreService2010.wsdl" MetadataType="Wsdl" ID="aa7a0229-3c85-4102-8d75-832a0d011bb9" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?wsdl" />
+    <MetadataFile FileName="CoreService.wsdl" MetadataType="Wsdl" ID="93277f03-7a1c-466a-9eb8-34fae8bf9359" SourceId="1" SourceUrl="http://nl-bas-06/webservices/CoreService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
